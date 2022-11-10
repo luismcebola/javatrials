@@ -1,0 +1,226 @@
+
+PB613
+action613(integer a){
+    integer Number=a;
+    if(a>b){
+        n=b;}Elseif(b>a){
+        n=a}; Else{n=a};
+    integer b=0;
+    while(n>0) {
+        If(mod(b,n)==0 && mod(a,n)==0 )
+
+
+PB613
+action613(integer a){
+    integer Number=a;
+    integer var=0;
+    str text="";
+    While(var<= Number){
+        If(cond3(var)==0 && cond7(var)==0){
+            t=t+" " + var;}
+        var=var+1;}
+Return t
+     }
+
+
+action6131(integer a)
+boolean cond3(integer x)=If (mod(x,3)==0)
+boolean cond7(integer x)=If (mod(x,10)==7)
+
+
+ite|number|count|
+1   6       0
+2   7       1
+3   8       2
+4   9       3
+5   10      4
+
+
+ite|Mby2|number|count
+1   -     20    0
+2   40    40    1
+3   80    80    2
+4   160   160   3
+5   -       -   3
+
+
+actiontest(integer list a, integer list b){
+
+integer sa=lsum(a);
+integer sb=lsum(b);
+integer n;
+
+if(sa>=sb){
+    n=findmax(b);
+    }else{n=findmax(a);}
+return n
+}
+
+
+lsum(integer list a){
+
+integer s1;
+for(i=0, i<a.length, i=i+1){
+    s1=s1+a.current}
+return s1;
+}
+
+
+findmax(integer list a){
+
+integer count=0;
+integer max=a[0];
+
+while (count<a.length){
+    if(a.current>max){
+        max=a.current};
+    count=count+1;}
+return max
+}
+
+
+
+it|      a      |     b        |lsum(a)|lsum(b)|   findmax   |count|max|n
+1   1,2,3          5,8            6       -          -          -   -   -
+2   1,2,3          5,8            6       13    if->findmax(b)  0   5   0
+3   1,2,3          5,8            6       13    if->findmax(b)  1   8   0
+3   1,2,3          5,8            6       13          8         1   8   8
+
+
+
+
+701
+
+Ct(decimal Num1, decimal list ArrayOfNumbers){
+    integer count=0;
+    for(integer i=0,i<ArrayOfNumbers.length,i=i+1){
+        If(ArrayOfNumbers[i]==Num1){
+            count=count+1;}
+    }
+    return count
+}
+
+
+702
+
+Ct(decimal Num1, decimal list ArrayOfNumbers){
+    integer count=0;
+    foreach Current in ArrayOfNumbers{
+        If(Current==Num1){
+            count=count+1;}
+    }
+    return count
+}
+
+703
+
+704
+NumberOfTimes(integer list ArrayOfIntegers){
+   
+    integer l=fmax(ArrayOfIntegers);
+    integer list resultlist;
+    for(integer i=0,i<l,i=i+1){
+        resultlist=ListAppend(resultlist,ntimes(i,ArrayOfIntegers));
+    }
+}
+fmax(integer list a){
+
+integer count=0;
+integer max=a[0];
+
+while (count<a.length){
+    if(a.current>max){
+        max=a.current};
+    count=count+1;}
+return max
+}
+ntimes(integer n, integer list ArrayOfIntegers){
+
+    integer count=0;
+    for(integer i=0,i<ArrayOfIntegers.length,i=i+1){
+        If(ArrayOfNumbers[i]==n){
+            count=count+1;}
+    }
+    return count
+}
+
+
+
+
+
+PB901
+fword(str list words){
+
+    integer pos=-1;
+    for(integer i=0,i<words.length,i=i+1){
+        if(words[i]=="Jackpot"){
+            pos=i;
+            return pos;};
+    };
+}; 
+
+902
+fword(str list words){
+    
+    integer xi=0;
+    integer xf=words.length-1;
+    integer xm=(xf+xi)/2;
+    str t="Not found!";
+
+        while(words[xm] != "Mary Anna" and xi<xf){
+             if (words[xm] > "Mary Anna"){
+                    xf=xm-1;
+                } else{
+                    xi=xm+1; 
+                } ;
+             xm=(xf+xi)/2;
+        };
+    if(xf<xi){
+         return t;};
+    return xm
+} ;
+
+PB1001
+BubbleSort
+Bbsort(Xtype list X){
+    
+    Xtype list Xsorted=X;
+    boolean sorted=1;
+    Xtype Xtemp;
+    for(integer i=X.length-1,i>0,i=i-1){
+        for(integer j=i,j>0,j=j+1){
+            if(X[j-1]>X[j]){
+                Xtemp=X[j];
+                X[j]=X[j-1];
+                X[j-1]=Xtemp;
+                sorted=0;
+            };
+        if(sorted==1){
+            Xsorted=X;      
+            return Xsorted;
+            };
+        };
+    Xsorted=X;      
+    return Xsorted;};
+    };
+}
+
+
+
+
+PB1003
+SelectionSort(whatevertype list X){
+
+    for(integer i=0,i<X.length-1,i=i+1){
+        integer list Xtemp=X[i];
+        integer pos=i;
+        for(integer j=i,j<X.length-1,j=j+1){
+            if(X[j]<Xtemp){
+                Xtemp=X[j];
+                pos=j;
+              };
+            X[pos]=X[i];
+            X[i]=Xtemp;
+    };
+    return X;
+};
