@@ -224,3 +224,25 @@ SelectionSort(whatevertype list X){
     };
     return X;
 };
+
+
+
+ PB0803
+        Sum(integer list X){
+            integer sum=0;
+            for(integer i=0;i<X.length;i=i+1){
+                sum=sum+X[i];
+            }
+            return sum;
+        }
+        RecursionSum(integer list X, integer n){
+            integer sum;
+            if (n = 0) { //stop condition
+                sum=X[n];
+                return sum;
+            }
+            else { // recursion logic
+                sum=X[n]+RecursionSum(X,n-1);
+                return sum;
+            }
+        }
