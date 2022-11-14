@@ -248,6 +248,26 @@ SelectionSort(whatevertype list X){
         }
 
 
+GetSecondGreatest(decimal X){
+    decimal max=X[0];
+    decimal max2=X[0];
+    If(X.length<2){
+        Return -1;
+    };
+    For(integer i=1; i< X.length; i=i+1){
+        If(X[i] > max) {
+            max2 = max;
+            max = X[i];
+        }
+        ;
+        Else If (X[i] > max2) {
+            max2 = X[i];
+        };
+    };
+    Return max2;
+}
+
+
 RD0201
 INSERT INTO Region VALUES(6,'Faraway');
 
@@ -274,3 +294,19 @@ WHERE [UnitsInStock] > 0
 RD0515
 SELECT COUNT (DISTINCT [ContactTitle])
     FROM {Customers}
+
+
+SELECT COUNT (DISTINCT [ContactTitle]), DISTINCT [ContactTitle]
+    GROUP BY COUNT({Customers}.[Country])
+    FROM {Customers}
+
+RD807
+    SELECT Name
+    FROM Teachers
+        WHERE NOT EXISTS (SELECT TeachersId FROM Class
+            WHERE Teachers.Id = TeachersId)
+
+RD804
+
+GetSecondGreatest
+
