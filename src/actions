@@ -246,3 +246,10 @@ SelectionSort(whatevertype list X){
                 return sum;
             }
         }
+
+
+RD0201
+INSERT INTO Region VALUES(6,'Faraway');
+
+RD0202
+INSERT INTO Products (ProductName, SupplierID, CategoryID) VALUES ('BeachBall', 1, 2);
