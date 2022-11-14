@@ -253,3 +253,24 @@ INSERT INTO Region VALUES(6,'Faraway');
 
 RD0202
 INSERT INTO Products (ProductName, SupplierID, CategoryID) VALUES ('BeachBall', 1, 2);
+
+RD0503
+SELECT MAX([UnitPrice]) AS MaxUnitPrice
+FROM {Products}
+
+RD0505
+SELECT AVG([UnitPrice]) AS AVGUnitPrice
+FROM {Products}
+
+RD0506
+SELECT SUM([UnitsInStock]) AS SumUnitsInStock
+FROM {Products}
+
+RD0508
+SELECT MAX([UnitPrice]), MIN([UnitPrice]), AVG([UnitPrice]), SUM([UnitsInStock]), COUNT(1)
+FROM {Products}
+WHERE [UnitsInStock] > 0
+
+RD0515
+SELECT COUNT (DISTINCT [ContactTitle])
+    FROM {Customers}
