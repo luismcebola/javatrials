@@ -247,7 +247,6 @@ SelectionSort(whatevertype list X){
             }
         }
 
-
 GetSecondGreatest(decimal X){
     decimal max=X[0];
     decimal max2=X[0];
@@ -308,6 +307,9 @@ RD807
 
 RD804
 
+
+
+
 PB510
 printer(integer n){
         int n;
@@ -351,8 +353,12 @@ PB510 com while
 
 
 
-int i,j,key;
-        int[] X={0,1,10,4,7,6};
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int i,j;
+        double key;
+        double[] X={0,1.4,10,4,7,6,1000, 9.3,6.4};
         for (i=0;i< X.length;i++){
             key=X[i];
             j=i-1;
@@ -362,6 +368,7 @@ int i,j,key;
             }
             X[j+1]=key;
         }
-        System.out.println(Array.toString(X));
-
+        System.out.println(Arrays.toString(X));
+    }
+}
 
