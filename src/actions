@@ -239,18 +239,50 @@ public class Main {
 }
 
 
+#PB0803
+        Sum(integer list X){
+            integer sum=0;
+            for(integer i=0;i<X.length;i=i+1){
+                sum=sum+X[i];
+            }
+            return sum;
+        }
+        RecursionSum(integer list X, integer n){
+            integer sum;
+            if (n = 0) { //stop condition
+                sum=X[n];
+                return sum;
+            }
+            else { // recursion logic
+                sum=X[n]+RecursionSum(X,n-1);
+                return sum;
+            }
+        }
 
 
-PB901
+
+#PB0901
 fword(str list words){
-
     integer pos=-1;
     for(integer i=0,i<words.length,i=i+1){
         if(words[i]=="Jackpot"){
             pos=i;
-            return pos;};
-    };
-}; 
+            return pos;}
+    }
+}
+Java:
+public class Main {
+    public static void main(String[] args) {
+        String[] X={"er", "trrtw","wer","er","Jackpot","se","vsdf","wer"};
+        int pos=-1;
+        for(int i=0; i < X.length;i=i+1) {
+            if (X[i] == "Jackpot") {
+                pos = i;
+            }
+        }
+        System.out.println(pos);
+    }
+}
 
 902
 fword(str list words){
@@ -272,6 +304,8 @@ fword(str list words){
          return t;};
     return xm
 } ;
+
+
 
 PB1001
 BubbleSort
@@ -320,25 +354,6 @@ SelectionSort(whatevertype list X){
 
 
 
- PB0803
-        Sum(integer list X){
-            integer sum=0;
-            for(integer i=0;i<X.length;i=i+1){
-                sum=sum+X[i];
-            }
-            return sum;
-        }
-        RecursionSum(integer list X, integer n){
-            integer sum;
-            if (n = 0) { //stop condition
-                sum=X[n];
-                return sum;
-            }
-            else { // recursion logic
-                sum=X[n]+RecursionSum(X,n-1);
-                return sum;
-            }
-        }
 
 GetSecondGreatest(decimal X){
     decimal max=X[0];

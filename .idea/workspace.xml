@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92fb6ce5-a498-4341-b1af-9831871c0de8" name="Changes" comment="print lists update">
+    <list default="true" id="92fb6ce5-a498-4341-b1af-9831871c0de8" name="Changes" comment="exercises update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions" afterDir="false" />
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668558723131</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="exercises update">
+      <created>1668575857281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668575857281</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,9 +147,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="z included" />
-    <MESSAGE value="exercises update" />
     <MESSAGE value="print lists update" />
-    <option name="LAST_COMMIT_MESSAGE" value="print lists update" />
+    <MESSAGE value="exercises update" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercises update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
