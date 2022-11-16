@@ -506,6 +506,3 @@ UPDATE {Territories}
 SET {Territories}.[RegionID]=
         (SELECT {Region}.[RegionID]='Faraway'
         FROM {Region})
-
-
-        #RD511
