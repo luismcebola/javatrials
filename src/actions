@@ -375,6 +375,10 @@ GetSecondGreatest(decimal X){
     Return max2;
 }
 
+RD501
+SELECT COUNT(1), ContactTitle
+From {Customers}
+GROUP BY [ContactTitle]
 
 RD0201
 INSERT INTO Region VALUES(6,'Faraway');
@@ -495,3 +499,13 @@ public class Main {
         }
     }
 }
+
+
+
+UPDATE {Territories}
+SET {Territories}.[RegionID]=
+        (SELECT {Region}.[RegionID]='Faraway'
+        FROM {Region})
+
+
+        #RD511
