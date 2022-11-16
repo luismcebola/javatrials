@@ -1,13 +1,70 @@
+#PB0522
+    action522() {
+        decimal temp = -1;
+        decimal pi = 0;
+        integer count=0;
+        while (((pi - temp) > 0.00025) || ((temp - pi) > 0.00025)){
+            temp=pi;
+            if (count % 2 == 0){
+                pi=pi+1.0/ (2.0 * count + 1.0);
+            } else {
+                pi = pi - 1.0 / (2.0 * count + 1.0);
+            }
+            count=count+1;
+        }
+        pi=4*pi;
+        return pi;
+    }
+Java:
+public class Main {
+    public static void main(String[] args) {
+        double temp = -1, pi = 0;
+        int count=0;
+        while (((pi - temp) > 0.00025) || ((temp - pi) > 0.00025)){
+            temp=pi;
+            if (count % 2 == 0){
+                pi=pi+1.0/ (2.0 * count + 1.0);
+            } else {
+                pi = pi - 1.0 / (2.0 * count + 1.0);
+            }
+            count=count+1;
+        }
+        pi=4*pi;
+        System.out.println(pi);
+    }
+}
 
-PB613
-action613(integer a){
-    integer Number=a;
-    if(a>b){
-        n=b;}Elseif(b>a){
-        n=a}; Else{n=a};
-    integer b=0;
-    while(n>0) {
-        If(mod(b,n)==0 && mod(a,n)==0 )
+#PB0505
+    action505(integer year) {
+        integer next_many = 1;
+        integer count = 0;
+        str text;
+        while (count != next_many){
+            year = year + 1;
+            if ((year % 400 == 0)
+                    || (year % 4 == 0 && year % 100 != 0)) {
+                count=count+1;
+                text=text + year
+            }
+        }
+        return text
+    }
+Java:
+public class Main {
+    public static void main(String[] args) {
+        int year = 2099;
+        int next_many = 1;
+        int count = 0;
+        while (count != next_many){
+            year = year + 1;
+            if ((year % 400 == 0)
+                    || (year % 4 == 0 && year % 100 != 0)) {
+                count=count+1;
+                System.out.println(year);
+            }
+        }
+    }
+}
 
 
 PB613
@@ -21,7 +78,6 @@ action613(integer a){
         var=var+1;}
 Return t
      }
-
 
 action6131(integer a)
 boolean cond3(integer x)=If (mod(x,3)==0)
@@ -114,12 +170,15 @@ Ct(decimal Num1, decimal list ArrayOfNumbers){
 
 703
 
-704
+
+
+
+#PB0704
 NumberOfTimes(integer list ArrayOfIntegers){
    
     integer l=fmax(ArrayOfIntegers);
     integer list resultlist;
-    for(integer i=0,i<l,i=i+1){
+    for(integer i=0,i<l+1,i=i+1){
         resultlist=ListAppend(resultlist,ntimes(i,ArrayOfIntegers));
     }
 }
@@ -143,7 +202,41 @@ ntimes(integer n, integer list ArrayOfIntegers){
     }
     return count
 }
+Java:
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int[] X = {1, 10, 4, 3, 2, 5, 4, 4, 3, 3, 1};
+        int l = fmax(X);
+        int[] resultlist = new int [l+1];
+        for (int i = 0; i < l+1; i = i + 1) {
+            resultlist[i] = ntimes(i, X);
+        }
+        System.out.println(Arrays.toString(resultlist));
+    }
 
+    public static int fmax(int[] a) {
+        int count = 0;
+        int max = a[0];
+        while (a.length > count) {
+            if (a[count] > max) {
+                max = a[count];
+            }
+            count = count + 1;
+        }
+        return max;
+    }
+
+    public static int ntimes(int n, int[] a) {
+        int count = 0;
+        for (int i = 0; i < a.length; i = i + 1) {
+            if (a[i] == n) {
+                count = count + 1;
+            }
+        }
+        return count;
+    }
+}
 
 
 
@@ -384,5 +477,25 @@ public class Main {
         } else {
             return k*k;
         }
+    }
+}
+
+
+#PB0522
+public class Main {
+    public static void main(String[] args) {
+        double temp = -1, pi = 0;
+        int count=0;
+        while (((pi - temp) > 0.00025) || ((temp - pi) > 0.00025)){
+            temp=pi;
+            if (count % 2 == 0){
+                pi=pi+1.0/ (2.0 * count + 1.0);
+            } else {
+                pi = pi - 1.0 / (2.0 * count + 1.0);
+            }
+            count=count+1;
+        }
+        pi=4*pi;
+        System.out.println(pi);
     }
 }
