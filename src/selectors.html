@@ -1,0 +1,61 @@
+<html>
+	
+	<head>
+		<title> Selectors </title>
+		<style>
+			p.MyClass1 {
+				color: blue;
+				
+			}
+			
+			p .MyClass1.MyClass2 {
+				font-weight: bold;
+			}
+			
+			p span {
+				font-style: italic;
+			}
+			
+			.MyClass1 p .MyClass1 {
+				text-decoration: underline;
+				color: green;
+			}
+			
+			p:hover {
+				text-transform: uppercase;
+			}
+			
+			div.MyClass1:hover a:visited {
+				color: pink;
+			}
+
+			
+		<!-- 
+			f. div.MyClass1:hover a:visited { }-->
+		</style>
+	</head>
+	
+	<body>
+	
+		<p class="MyClass1">
+			this is c1 p.
+			<p>
+				this is p in c1 p. 
+					<span class="MyClass1"> this is c1 span in p in c1 p.</span>
+				This is again p in c1 p.
+			</p>
+		</p>
+		
+		<div class="MyClass1">
+		
+			<p>
+				<span class="MyClass1 MyClass2"> This is c1 c2 span in p in c1 div.</span>
+				This is p in c1 div. <br>
+				<br>		
+			</p>
+			<a href="https://www.lipsum.com/">This is pink when visited inside c1 div.</a>
+		</div>
+
+	</body>
+		
+</html>
