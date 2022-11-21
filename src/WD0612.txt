@@ -1,0 +1,19 @@
+WD0612
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     p {border: 1px solid black;
+       }
+    .firstp {border: 1px solid red;
+    }
+    </style>
+  </head>
+  <body>
+  
+  <p class="firstp">This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <p> This is yet another paragraph.</p>
+  
+  </body>
+</html>

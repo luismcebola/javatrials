@@ -1,0 +1,74 @@
+# Fazer o modelo de dados: 
+
+1. Um campeonato acontece num determinado ano e tem um nome
+2. Existem várias equipas compostas por jogadores
+3. Cada jogador tem uma data de nascimento e pertence então a uma equipa
+4. Cada equipa tem no máximo um logotipo/emblema
+5. As equipas estão dividas em escaloes e podem subir de escalão/divisão
+6. Cada equipa tem um tecnico de saude e um treinador
+7. Existem campos de futebol que têm que ser reservador para cada jogo
+8. Cada jogo é feito entre duas equipas, tem uma data, tem um resultado, 
+tem uma hora
+9. É tambem necessário registar os treinos de cada equipa e ter um campo
+reservado para cada treino
+10. As equipas jogam nos campeonatos
+
+Forma de modelar por escrito, da forma que deve ser feito no teste:
+Campeonato
+- Id (primary key, integer)
+- Nome (text)
+
+Jogador
+- Id (pk, integer)
+- Nome (text)
+- BirthDate (date)
+- EquipaId (foreign key, Equipa Identifier)
+
+Equipa
+- Id (pk, integer)
+- Nome (text)
+- DivisãoId (fk, Divisão Identifier)
+- TreinadorId (fk, Treinador Identifier)
+- TecnicoId (fk, Tecnico Identifier)
+
+EquipaNoCampeonato
+- Id (pk, integer)
+- EquipaId (fk, Equipa Identifier)
+- CampeonatoId (fk, Campeonato Identifier)
+
+Treinador
+- Id (pk, integer)
+- Nome (text)
+
+Campo
+- Id (pk, integer)
+- Nome (text)
+
+Divisão
+- Id (pk integer)
+- Nome (text)
+
+Tecnico 
+- Id (pk integer)
+- Nome (text)
+
+Emblema
+- EquipaId (pk, Equipa Identifier)
+- Emblema (Binary Data)
+- Filename (text)
+- Filetype (text)
+
+Jogo
+- Id (pk, integer)
+- Nome (text)
+- CampoId (fk, Campo identifier)
+- DateTime (datetime)
+- Equipa1Id (fk, Equipa Identifier)
+- Equipa2Id (fk, Equipa Identifier)
+- ResultadoEquipa1 (text)
+- ResultadoEquipa2 (text)
+
+Treino
+- Id (pk, integer)
+- DateTime (datetime)
+- EquipaId (fk, Equipa Identifier) 

@@ -1,0 +1,69 @@
+<html>
+	
+	<head>
+		<title> Store </title>
+		<!-- serve para o execício 2.1.9-->
+		<link rel="stylesheet" href="exercicio2-1-9.css">
+	</head>
+	
+	<body>
+		<h1>A kind of store</h1>
+		
+		<h3>Books</h3>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Origin</th>
+					<th>Stock</th>
+					<th>Price</th>
+					<th id="preview_cell">Preview</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>A Knock at Midnight: A Story of Hope, Justice, and Freedom</td>
+					<td>USA</td>
+					<td>265</td>
+					<td>$14.38</td>
+					<td><a href="https://www.amazon.com/dp/B07WQMH6N4/ref=s9_acsd_al_bw_c2_x_0_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=YRXETAQW4NPV7XWWTFC8&pf_rd_t=101&pf_rd_p=c8b6fb3f-95e2-4b47-809e-ea3d7223617a&pf_rd_i=17276804011" target="_blank"><img src="https://m.media-amazon.com/images/I/41zyNS33aFL.jpg" alt="A Knock at Midnight cover"></a> </td>
+				</tr>
+				
+				<tr>
+					<td>Migrations: A Novel</td>
+					<td>UK</td>
+					<td>25</td>
+					<td>$13.35</td>
+					<td><a href="https://www.amazon.com/dp/B07WCYR22W/ref=s9_acsd_al_bw_c2_x_1_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=YRXETAQW4NPV7XWWTFC8&pf_rd_t=101&pf_rd_p=c8b6fb3f-95e2-4b47-809e-ea3d7223617a&pf_rd_i=17276804011" target="_blank"><img src="https://m.media-amazon.com/images/I/41EkNUVCtTL.jpg" alt="Migrations: A Novel cover"></a> </td>
+				</tr>
+				<tr>
+					<td>Blacktop Wasteland: A Novel</td>
+					<td>UK</td>
+					<td>456</td>
+					<td>$14.83</td>
+					<td><a href="https://www.amazon.com/dp/B07WCYQZ4Y/ref=s9_acsd_al_bw_c2_x_2_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=YRXETAQW4NPV7XWWTFC8&pf_rd_t=101&pf_rd_p=c8b6fb3f-95e2-4b47-809e-ea3d7223617a&pf_rd_i=17276804011" target="_blank"><img src="https://m.media-amazon.com/images/I/41nNVv6nrdL.jpg" alt="Blacktop Wasteland cover"></a></td>
+				</tr>
+				<tr>
+					<td>Group: How One Therapist and a Circle of Strangers Saved My Life</td>
+					<td>USA</td>
+					<td>2</td>
+					<td>$18.21</td>
+					<td><a href="https://www.amazon.com/dp/B084GBBGHS/ref=s9_acsd_al_bw_c2_x_3_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=YRXETAQW4NPV7XWWTFC8&pf_rd_t=101&pf_rd_p=c8b6fb3f-95e2-4b47-809e-ea3d7223617a&pf_rd_i=17276804011" target="_blank"><img src="https://m.media-amazon.com/images/I/41sSVpsmrNL.jpg" alt="Group cover"></a></td>
+				</tr>
+				<tr>
+					<td>The Vanishing Half: A Novel</td>
+					<td>UK</td>
+					<td>150</td>
+					<td>$14.83</td>
+					<td><a href="https://www.amazon.com/dp/B07XNG5L99/ref=s9_acsd_al_bw_c2_x_4_i?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=YRXETAQW4NPV7XWWTFC8&pf_rd_t=101&pf_rd_p=c8b6fb3f-95e2-4b47-809e-ea3d7223617a&pf_rd_i=17276804011" target="_blank"><img src="https://m.media-amazon.com/images/I/41ThX3SfAiL.jpg" alt="The Vanishing Half cover"></a></td>
+				</tr>
+			</tbody>
+		
+		</table>
+		
+		
+		
+	</body>
+</html>

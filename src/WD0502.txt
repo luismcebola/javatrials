@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title> Form </title>
+	</head>
+	
+	<body>
+		<div class="title">
+			<h1>Form</h1>
+		</div>
+		
+		<div class="form">
+			<form action="exercicio1-5-1.html">
+				<div class="fname"> 
+					<h4>Name:</h4>
+					<input type="text" name ="fname" placeholder="First Name">
+					<input type="text" name="lname" placeholder="Last Name">
+				</div>
+				
+				<br>
+				
+				<div class="birthdate"> 
+					<h4>Birthdate:</h4>
+					<input type="date" name ="birthdate" placeholder="Birthdate">
+				</div>
+				
+				<br>
+				
+				<div class="age"> 
+					<h4>Age:</h4>
+					<input type="number" name ="age" placeholder="Age">
+				</div>
+				
+				<br>
+				
+				<div class="age"> 
+					<h4>Phone Number:</h4>
+					<input type="tel" name ="tel" placeholder="Phone Number">
+				</div>
+				
+				<br>
+				
+				<div class="adress"> 
+					<h4>Adress:</h4>
+					<textarea name="adress" rows="4" cols="40"></textarea>
+				</div>
+				
+				<br>
+				
+				<div class="gender"> 
+					<h4>Gender:</h4>
+					<input type="radio" name ="gender" value="Male">Male<br>
+					<input type="radio" name ="gender" value="Female">Female<br>
+				</div>
+				
+				<br>
+				
+				<div class="user"> 
+					<h4>Username and password:</h4>
+					<input type="text" name="user_name" placeholder="User Name"><br>
+					<input type="password" name="pwd">
+				</div>
+				
+				<br>
+				
+				<input type="submit" value="Submit">		
+			
+			</form>			
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,8 @@
+<html>
+    <head>
+        <title> The Chronicle </title>
+    </head>
+    <body>
+        <h1>The Chronicle </h1>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title> The Uber </title>
+		
+	</head>
+	
+	<body>
+		<h1 id="top">The Uber </h1>
+		
+		<h2>Uber </h2>
+		<img src="https://melhordonocode.com.br/wp-content/uploads/2022/08/unnamed.png" alt="Uber Logo" style="width: 150px">
+		<p><a href=C:\Users\Luis%20Cebola\OSAcademy\Web%20Development\Exercises\WD0202.html>Back to the Chronicle</a></p>
+	</body>
+	
+</html>

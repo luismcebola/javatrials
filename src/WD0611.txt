@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> The WD0611 </title>
+	<style>
+		p{border: 1px solid;
+		}
+	</style>
+    </head>
+    <body>
+	<p style="border: 1px solid red;">paragraph 1</p>
+	<p>paragraph 2</p>
+    </body>
+</html>
