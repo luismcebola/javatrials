@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+ 
+    .class1 .class2 {background-color: lightgrey; }
+
+    div.class1:hover { color: red; }
+ 
+     .class1 div .class1 { color: yellow; }
+
+    .class1 > .class2.class3 { background-color: yellow; }
+
+    </style>
+  </head>
+  <body>
+
+   <div class="class1"> This is the parent div 
+      <div >This is a child div
+        <div class="class2 class3">This is a grandchild div
+        </div>
+      </div>
+   </div>
+    <div class="class1"> This is a div
+          <p class="class3">This is a paragraph inside a div.</p> 
+    <p>This is <span class="class2 class3">another</span> paragraph.</p>
+    </div>
+    <p class=""> This is yet another paragraph.</p>
+ 
+
+  </body>
+</html>
